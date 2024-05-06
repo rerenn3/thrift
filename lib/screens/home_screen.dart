@@ -11,22 +11,22 @@ class LoadingScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'WELCOME', // Kata-kata welcome
+                  'WELCOME',
                   style: TextStyle(
-                    fontSize: 48, // Ukuran teks yang besar
+                    fontSize: 48,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(height: 20), // Jarak antara teks "Welcome" dan gambar
+                SizedBox(height: 20),
                 SizedBox(
-                  width: 400, // Menentukan lebar gambar
-                  height: 400, // Menentukan tinggi gambar
+                  width: 400,
+                  height: 400,
                   child: Image.network(
                     'https://cdn3.iconfinder.com/data/icons/laundry-137/64/Clothes_clothing_Cloth_tshirt_shirt_Clothes_hanger_clothes_on_hangers_Laundry_icon_outline_illustration-1024.png',
-                    fit: BoxFit.cover, // Mengatur agar gambar mengisi ruang yang tersedia
+                    fit: BoxFit.cover,
                   ),
                 ),
-                SizedBox(height: 20), // Jarak antara gambar dan indicator loading
+                SizedBox(height: 50),
                 CircularProgressIndicator(), // Indicator loading
               ],
             ),
@@ -36,11 +36,11 @@ class LoadingScreen extends StatelessWidget {
             right: 20,
             child: FloatingActionButton(
               onPressed: () {
-                // Tambahkan logika untuk tombol panah di sini
+
               },
               child: Icon(Icons.arrow_forward),
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(30), // Mengatur border radius menjadi setengah dari lebar tombol
+                borderRadius: BorderRadius.circular(30),
               ),
             ),
           ),
